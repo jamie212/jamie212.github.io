@@ -1,31 +1,48 @@
+
 <HTML>
 
     　<HEAD>
-    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type = "text/javascript"></script>
+        <script>
+            $(document).ready(function() {
+                $("#text").hide();
+           
+                $("button").click(function() {      
+                    $("#text").slideDown(2000);  
+                        return false;
+                });
+            });
+        </script>
     　　<TITLE>My page</TITLE>
     
     　　<Meta>
-    
+
     　</HEAD>
     
     　<BODY BGCOLOR=#B1E0E1>
+
         <center>
             <h1><b><big>Welcome to Jamie's personal page!</big></b><br></h1>
             <p>
                 My name is Li-Ting Wang.<br><br>
                 Major in Computer Science & Information Engineering at FJU.<br>
             </p>
-            <h4>Let me introduce my cute dog, Bucky.</h4> 
+            <h4>Let me introduce my cute dog, Bucky.</h4>
+            
             <p>
                 He is a 5 years old Shiba. 
                 He likes to eat and sleep.
                 He's very gentle and harmless. 
             </p>
+            
+            
             <img height=300 width=300 src= https://i.imgur.com/7mXAvYY.jpg>
             <img height=300 width=300 src= https://i.imgur.com/SZ3eQKK.jpg><br>
             <img height=300 width=300 src= https://i.imgur.com/Cpk6umy.jpg>
             <img height=300 width=300 src= https://i.imgur.com/FUyJy6d.jpg><br>
-            <big><h4>So cute ~~~</h4> </big>
+            <br>
+            <button class="btn btn-default target" id="button">CLICK ME!!</button> 
+            <big><h4 id ="text">So cute ~~~</h4> </big>
         </center>
 
     
